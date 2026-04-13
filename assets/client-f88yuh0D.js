@@ -1,0 +1,1 @@
+import{t as e}from"./chunk-zsgVPwQN.js";import{r as t}from"./chunk-242VQQM5-CUZJR1Fm.js";var n=e((e=>{var n=t();e.createRoot=n.createRoot,e.hydrateRoot=n.hydrateRoot}));export{n as t};
