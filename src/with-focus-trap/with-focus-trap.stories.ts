@@ -1,7 +1,7 @@
 import { withFocusTrap } from './with-focus-trap';
 
 const meta = {
-	title: 'Storybook Decorators/withFocusTrap',
+	title: 'withFocusTrap',
 	tags: ['autodocs'],
 	decorators: [
 		withFocusTrap,

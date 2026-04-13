@@ -1,7 +1,7 @@
 import { withMaxWidth } from './with-max-width';
 
 const meta = {
-	title: 'Storybook Decorators/withMaxWidth',
+	title: 'withMaxWidth',
 	tags: ['autodocs'],
 	decorators: [
 		withMaxWidth('400px'),
