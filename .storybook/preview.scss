@@ -1,0 +1,28 @@
+@use "../sb-assets/prism-theme";
+
+@function class-begins-with($partial) {
+	@return '[class^="#{$partial}"]';
+}
+
+@function class-contains($partial) {
+	@return '[class*="#{$partial}"]';
+}
+
+@function class-ends-with($partial) {
+	@return '[class$="#{$partial}"]';
+}
+
+#{class-contains('StyledButton')} {
+	font-family: unset;
+}
+
+#{class-contains('OutlineCTAWrapper')} {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-block-end: 1rem;
+
+	#{class-contains('ActionWrapper')} {
+		margin-inline-start: auto;
+	}
+}

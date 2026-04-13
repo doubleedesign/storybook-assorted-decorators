@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"target": "esnext",
+		"moduleResolution": "bundler",
+		"rootDir": "src",
+		"outDir": "dist",
+		"lib": [
+			"ESNext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react"
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"node_modules/.pnpm/storybook@10.3.5_@testing-l_229f2c4d274a846a6b2ca9da4bfe1a0b/node_modules/storybook/dist/manager/globals-runtime.js"
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"tests",
+		"**/*.test.ts",
+		"**/*.spec.ts",
+		"**/*.stories.ts",
+		"vitest.config.ts",
+		"vitest.setup.ts"
+	]
+}
