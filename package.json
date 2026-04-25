@@ -1,6 +1,6 @@
 {
 	"name": "@doubleedesign/storybook-assorted-decorators",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A collection of utility decorators for testing and showcasing UI components using Storybook.",
 	"author": "Leesa Ward <contact@doubleedesign.com.au>",
 	"repository": {
