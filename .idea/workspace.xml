@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ed9e84-600b-4c5f-9615-d564663b0fb7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/with-max-width/with-max-width.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/with-max-width/with-max-width.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/with-max-width/with-max-width.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/with-max-width/with-max-width.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,8 @@
       <workItem from="1776057226015" duration="531000" />
       <workItem from="1776058024324" duration="140000" />
       <workItem from="1776058592908" duration="28000" />
-      <workItem from="1776060012677" duration="392000" />
+      <workItem from="1776060012677" duration="1789000" />
+      <workItem from="1777092567654" duration="1633000" />
     </task>
     <servers />
   </component>

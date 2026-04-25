@@ -1,4 +1,4 @@
-import { withMaxWidth } from './with-max-width';
+import { maxWidthControl, withMaxWidth } from './with-max-width';
 
 const meta = {
 	title: 'withMaxWidth',
@@ -6,6 +6,9 @@ const meta = {
 	decorators: [
 		withMaxWidth('400px'),
 	],
+	argTypes: {
+		...maxWidthControl
+	},
 	render: () => {
 		const element = document.createElement('div');
 		element.style.padding = '1rem';
