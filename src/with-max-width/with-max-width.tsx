@@ -1,5 +1,7 @@
 import type { Args, PartialStoryFn, Renderer, StoryContext } from 'storybook/internal/types';
 import { useArgs } from 'storybook/preview-api';
+import { ReactBridge } from "../utils/react-bridge";
+import React from 'react';
 
 export const maxWidthControls = {
 	__maxWidth: {
@@ -45,7 +47,15 @@ export const withMaxWidth = (defaultWidth: string, showBorder = false) => {
 			return wrapper;
 		}
 
-		// React / other framework returning DOM node
+		if (isReactComponent(Story)) {
+			return (
+				<div style={{ maxWidth, border: context.args.__showMaxWidthBox ? '1px dashed #999' : '0' }}>
+					<Story {...context} />
+				</div>
+			);
+		}
+
+		// Other framework returning DOM node
 		if (storyElement instanceof Element || storyElement instanceof DocumentFragment) {
 			const wrapper = document.createElement('div');
 			wrapper.style.maxWidth = maxWidth;
@@ -98,6 +108,25 @@ function isVueComponent(val: unknown) {
 
 	// @ts-expect-error TS2339: Property __v_isVNode does not exist on type object
 	return val?.__v_isVNode;
+}
+
+function isReactComponent(Story: unknown) {
+	if (typeof Story !== 'function') return false;
+
+	try {
+		const result = Story({});
+
+		return (
+			result !== null &&
+			typeof result === 'object' &&
+			!( result instanceof Element) &&
+			!( result instanceof DocumentFragment) &&
+			'$$typeof' in result // React elements always have this
+		);
+	}
+	catch {
+		return false;
+	}
 }
 
 function convertToNumeric(defaultWidth: string) {
